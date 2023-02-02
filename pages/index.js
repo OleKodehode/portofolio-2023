@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import { 
-  AiOutlineMail, 
-  AiOutlinePhone, 
-  AiOutlineHome 
+import {
+  AiOutlineMail,
+  AiOutlinePhone,
+  AiOutlineHome
 } from 'react-icons/ai'
 import ImageOfMe from '../public/portrait_picture.jpg'
 import styles from '@/styles/Home.module.css'
@@ -24,18 +24,24 @@ export default function Home() {
         <ul
           className={styles.NavBarFlex}
         >
-          <Link href='/'>
-          <li>
-            Hjem
-          </li>
+          <Link 
+            href='/'
+          >
+            <li>
+              Hjem
+            </li>
           </Link>
-          <li>
-            Prosjekter
-          </li>
+          <Link
+            href="/"
+          >
+            <li>
+              Prosjekter
+            </li>
+          </Link>
         </ul>
       </nav>
       <main
-      className={styles.Main}
+        className={styles.Main}
       >
         <section
           className={styles.HeroSection}
@@ -48,167 +54,179 @@ export default function Home() {
             className={styles.HeroSectionInfo}
           >
 
-          <h1>Ole Håvard Furuseth Bergan</h1>
-          <h2>Frontend utvikler</h2>
+            <h1>
+              Ole Håvard Furuseth Bergan
+            </h1>
+            <h2>
+              Frontend utvikler
+            </h2>
           </div>
         </section>
         <div
           className={styles.BorderBoxContact}
         >
-        <section
-          className={styles.Contact}
+          <section
+            className={styles.Contact}
           >
-          <h2>
-            Kontaktinfo:
-          </h2>
-          <ul>
-            <li>
-              <AiOutlineMail/>
-              ohfb96@gmail.com
-            </li>
-            <li>
-              <AiOutlinePhone />
-              96912304
-            </li>
-            <li>
-              <AiOutlineHome />
-              Brothaugen 2A, 5209 Os
-            </li>
-          </ul>
-        </section>
+            <h2>
+              Kontaktinfo:
+            </h2>
+            <ul>
+              <li>
+                <AiOutlineMail />
+                ohfb96@gmail.com
+              </li>
+              <li>
+                <AiOutlinePhone />
+                96912304
+              </li>
+              <li>
+                <AiOutlineHome />
+                Brothaugen 2A, 5209 Os
+              </li>
+            </ul>
+          </section>
         </div>
         <div
           className={styles.BorderBoxMe}>
-        <section
-          className={styles.AboutMe}
+          <section
+            className={styles.AboutMe}
           >
-          <h2>
-            Om meg:
-          </h2>
-          <p>
-            Akkurat nå er jeg i praksis som frontend utvikler hos Kodeverket Bergen. Jeg har en enorm kjærlighet for faget og ser frem til å lære enda mer. På fritiden driver jeg som frivilig i Norsk Folkehjelp Solidaritetsungdommen Bergen, der jeg også sitter i styret og er økonomi ansvarlig. Jeg er også med som frivilig i Folkevenn i Bergen. Det går også en del timer til trening, gaming og se på anime.
-          </p>
-        </section>
+            <h2>
+              Om meg:
+            </h2>
+            <p>
+              Akkurat nå er jeg i praksis som frontend utvikler hos Kodeverket Bergen. Jeg har en enorm kjærlighet for faget og ser frem til å lære enda mer. På fritiden driver jeg som frivilig i Norsk Folkehjelp Solidaritetsungdommen Bergen, der jeg også sitter i styret og er økonomi ansvarlig. Jeg er også med som frivilig i Folkevenn i Bergen. Det går også en del timer til trening, gaming og se på anime.
+            </p>
+          </section>
         </div>
         <div
           className={styles.BorderBoxSkills}>
 
-        <section
-          className={styles.Skills}
+          <section
+            className={styles.Skills}
           >
-          <h2>
-            Skills:
-          </h2>
-          <div>
-            <ul>
-              <li>
-                HTML
-              </li>
-              <li>
-                CSS
-              </li>
-              <li>
-                JavaScript
-              </li>
-              <li>
-                ReactJS
-              </li>
-              <li>
-                NextJS
-              </li>
-              <li>
-                Wordpress
-              </li>
-              <li>
-                Wix
-              </li>
-              <li>
-                Google Maps API
-              </li>
-            </ul>
-            <ul>
-              <li>
-              SCSS
-              </li>
-              <li>
-                Tailwind
-              </li>
-              <li>
-                Bootstrap
-              </li>
-              <li>
-                Styled Components
-              </li>
-              <li>
-                i18n
-              </li>
-              <li>
-                Strapi
-              </li>
-              <li>
-                FireBase
-              </li>
-            </ul>
-          </div>
-        </section>
+            <h2>
+              Skills:
+            </h2>
+            <div>
+              <ul>
+                <li>
+                  HTML
+                </li>
+                <li>
+                  CSS
+                </li>
+                <li>
+                  JavaScript
+                </li>
+                <li>
+                  ReactJS
+                </li>
+                <li>
+                  NextJS
+                </li>
+                <li>
+                  Wordpress
+                </li>
+                <li>
+                  Wix
+                </li>
+                <li>
+                  Google Maps API
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  SCSS
+                </li>
+                <li>
+                  Tailwind
+                </li>
+                <li>
+                  Bootstrap
+                </li>
+                <li>
+                  Styled Components
+                </li>
+                <li>
+                  i18n
+                </li>
+                <li>
+                  Strapi
+                </li>
+                <li>
+                  FireBase
+                </li>
+              </ul>
+            </div>
+          </section>
         </div>
         <div
           className={styles.BorderBoxExperience}>
 
-        <section
-          className={styles.Experience}
+          <section
+            className={styles.Experience}
           >
-          <h2>
-            Erfaring:
-          </h2>
-          <ul>
-            <li>
-              Kursdeltaget Kodeverket Bergen
-            </li>
-            <li>
-              Praksis som frontend utvikler hos Kodeverket Bergen
-            </li>
-            <li>
-              Praksis som frontend utvikler hos Bjørnafjorden Næringsråd
-            </li>
-            <li>
-              Praksis som frontend utvikler hos Octaos
-            </li>
-            <li>
-              Økonomiansvarlig hos Norsk Folkehjelp Solidaritetsungdommen Bergen
-            </li>
-          </ul>
-        </section>
+            <h2>
+              Erfaring:
+            </h2>
+            <ul>
+              <li>
+                Kursdeltaget Kodeverket Bergen
+              </li>
+              <li>
+                Praksis som frontend utvikler hos Kodeverket Bergen
+              </li>
+              <li>
+                Praksis som frontend utvikler hos Bjørnafjorden Næringsråd
+              </li>
+              <li>
+                Praksis som frontend utvikler hos Octaos
+              </li>
+              <li>
+                Økonomiansvarlig hos Norsk Folkehjelp Solidaritetsungdommen Bergen
+              </li>
+            </ul>
+          </section>
         </div>
         <div
           className={styles.BorderBoxPortofolio}>
 
-        <section
-          className={styles.Portofolio}
+          <section
+            className={styles.Portofolio}
           >
-          <h2>
-            Portofolio:
-          </h2>
-          <ul>
-            <li>
-              GitHub
-            </li>
-            <li>
-              Bergen Armwrestling Club
-            </li>
-            <li>
-              One Piece
-            </li>
-          </ul>
-        </section>
-          <button
-            className={styles.ProjectsBtn}
-            onClick={() => {console.log('test')}}
+            <h2>
+              Portofolio:
+            </h2>
+            <ul>
+              <Link href="https://github.com/OleKodehode">
+                <li>
+                  GitHub
+                </li>
+              </Link>
+              <Link href="https://bergenarmwrestling.no/">
+                <li>
+                  Bergen Armwrestling Club
+                </li>
+              </Link>
+              <Link href="https://www.fornynorge.no/">
+                <li>
+                  Forny Norge
+                </li>
+              </Link>
+            </ul>
+          </section>
+          <Link href="/">
+            <button
+              className={styles.ProjectsBtn}
+              onClick={() => { console.log('test') }}
             >
-            Se flere av mine prosjekter her
-          </button>
-              </div>
-          <div className={styles.BottomDivider}></div>
+              Se flere av mine prosjekter her
+            </button>
+          </Link>
+        </div>
+        <div className={styles.BottomDivider}></div>
       </main>
       <footer
         className={styles.Footer}
