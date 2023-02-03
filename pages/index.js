@@ -228,7 +228,10 @@ export default function Home() {
             </button>
           </Link>
         </div>
-        <div className={styles.BottomDivider}></div>
+        <div 
+          className={styles.BottomDivider}
+        >
+        </div>
       </main>
       <footer
         className={styles.Footer}
