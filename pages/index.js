@@ -220,9 +220,11 @@ export default function Home() {
           <Link href="/">
             <button
               className={styles.ProjectsBtn}
-              onClick={() => { console.log('test') }}
+              onClick={
+                () => { console.log('test') }
+              }
             >
-              Se flere av mine prosjekter her
+              Flere prosjekter
             </button>
           </Link>
         </div>
